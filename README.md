@@ -666,8 +666,8 @@ sudo systemctl enable \--now docker
 
 \# Clone repository\
 git clone
-\[https://github.com/yourusername/nullclass-soc-internship.git\](https://github.com/yourusername/nullclass-soc-internship.git)\
-cd nullclass-soc-internship\
+\[https://github.com/Magnus7811/soc_analyst_tier-2_project.git\](https://github.com/Magnus7811/soc_analyst_tier-2_project.git)\
+cd soc_analyst_tier-2_project\
 \
 \# Start Docker containers\
 docker compose up -d\

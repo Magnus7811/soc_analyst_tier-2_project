@@ -1,0 +1,92 @@
+# Python environment
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+build/
+dist/
+.Python
+env/
+venv/
+ENV/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+
+
+# Virtual environments
+.env
+.venv
+venv/
+env/
+
+
+# IDE specific files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+
+# Docker and container files
+docker-compose.override.yml
+*.swp
+.DS_Store
+
+
+# Sensitive information (CRITICAL FOR SECURITY PROJECTS)
+secrets/
+credentials/
+.env
+VIRUSTOTAL_API_KEY
+*.key
+*.pem
+*.crt
+*.der
+*.csr
+*.p12
+*.pfx
+*.asc
+*.gpg
+
+
+# Logs and data files
+*.log
+logs/
+*.csv
+results/
+output/
+temp/
+access.log
+payload.exe
+important_data.txt
+exfiltrated_data.txt
+upload_server.py
+
+
+# Screenshots (these should be managed separately)
+screenshots/*.png
+screenshots/*.jpg
+
+
+# Project-specific files
+Winlogbeat/
+Sysmon/
+Metasploit/
+iodine/
+hydra/
+
+
+# Temporary files
+*.tmp
+*.bak
+*.orig
+*.patch

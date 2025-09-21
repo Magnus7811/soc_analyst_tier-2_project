@@ -1,0 +1,88 @@
+title: Multi-Stage Attack Detection on desktop-bkfj38l
+id: e8f1c1d9-3b6f-4c8a-99f6-0a94b7a1d123
+status: stable
+description: |
+  Detects multi-stage attack on host desktop-bkfj38l involving:
+  1) Initial access and payload.exe execution from Downloads folder via scheduled tasks (Win event ID 4698),
+  2) Persistence creation through scheduled tasks and registry Run key modifications referencing payload.exe,
+  3) Privilege escalation with Meterpreter payload injection, getsystem command, and hashdump activity (Win event IDs 1, 4672),
+  4) Data exfiltration via PowerShell Invoke-WebRequest sending data to suspicious external URL.
+author: Cybersecurity Analyst
+date: 2025-08-09
+references:
+  - https://attack.mitre.org/techniques/T1053/005/
+  - https://attack.mitre.org/techniques/T1547/001/
+  - https://attack.mitre.org/techniques/T1078/
+  - https://attack.mitre.org/techniques/T1003/
+  - https://attack.mitre.org/techniques/T1041/
+logsource:
+  product: windows
+  service: security
+  definition:
+    - winlog.event_id
+    - process.name
+    - process.command_line
+    - host.name
+detection:
+  selection_scheduled_task_creation:
+    winlog.event_id: 4698
+    host.name: desktop-bkfj38l
+    process.command_line|contains: "payload.exe"
+    @timestamp|gte: "2024-08-01T14:20:00"
+    @timestamp|lte: "2024-08-01T14:40:00"
+  selection_registry_persistence:
+    winlog.event_id: 13    
+    host.name: desktop-bkfj38l
+    process.command_line|contains:
+      - "reg add"
+      - "payload.exe"
+    @timestamp|gte: "2024-08-01T14:20:00"
+    @timestamp|lte: "2024-08-01T14:40:00"
+  selection_meterpreter_injection:
+    winlog.event_id: 1     
+    host.name: desktop-bkfj38l
+    process.parent.name: meterpreter.exe
+    process.name|contains: "notepad.exe"
+    @timestamp|gte: "2025-08-03T11:45:00"
+    @timestamp|lte: "2025-08-03T12:00:00"
+  selection_privilege_escalation:
+    host.name: desktop-bkfj38l
+    @timestamp|gte: "2025-08-03T11:45:00"
+    @timestamp|lte: "2025-08-03T12:00:00"
+    any:
+      - winlog.event_id: 4672
+      - message|contains: "hashdump"
+      - message|contains: "getsysteem"
+  selection_data_exfiltration:
+    host.name: desktop-bkfj38l
+    @timestamp|gte: "2025-08-06T13:50:00"
+    @timestamp|lte: "2025-08-06T14:10:00"
+    process.name: powershell.exe
+    process.command_line|contains:
+      - "Invoke-WebRequest"
+      - "192.168.31.163:8080"
+condition: selection_scheduled_task_creation or selection_registry_persistence or selection_meterpreter_injection or selection_privilege_escalation or selection_data_exfiltration
+fields:
+  - '@timestamp'
+  - 'winlog.event_id'
+  - 'host.name'
+  - 'user.name'
+  - 'process.name'
+  - 'process.parent.name'
+  - 'process.command_line'
+  - 'message'
+level: high
+tags:
+  - attack.initial_access
+  - attack.persistence
+  - attack.privilege_escalation
+  - attack.exfiltration
+  - mitre.t1053.005
+  - mitre.t1547.001
+  - mitre.t1078
+  - mitre.t1003
+  - mitre.t1041
+  - windows
+  - sysmon
+  - winlogbeat
+

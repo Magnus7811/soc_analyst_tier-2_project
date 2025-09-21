@@ -1,36 +1,5 @@
 SOC Analyst TInternship Project: Blue Team Automation & Threat Detection
 
-## 📖 Table of Contents
-
--   [[Project
-    > Overview]](https://github.com/Magnus7811/soc_analyst_tier-2_project.git)
-
--   [[Lab Environment
-    > Setup]](https://github.com/Magnus7811/soc_analyst_tier-2_project)
-
--   [[Task 1: SOC Workflow
-    > Automation]{.underline}](https://www.google.com/search?q=%23-task-1-soc-workflow-automation)
-
--   [[Task 2: Custom Correlation Rules in
-    > SIEM]{.underline}](https://www.google.com/search?q=%23-task-2-custom-correlation-rules-in-siem)
-
--   [[Task 3: Multi-Stage APT
-    > Simulation]](https://www.google.com/search?q=%23-task-3-multi-stage-apt-simulation)
-
--   [[Tools and
-    > Technologies]{.underline}](https://www.google.com/search?q=%23-tools-and-technologies)
-
--   [[Project Setup and
-    > Reproduction]{.underline}](https://www.google.com/search?q=%23-project-setup-and-reproduction)
-
--   [[Key
-    > Takeaways]{.underline}](https://www.google.com/search?q=%23-key-takeaways)
-
--   [[Future
-    > Improvements]{.underline}](https://www.google.com/search?q=%23-future-improvements)
-
--   [[References]{.underline}](https://www.google.com/search?q=%23-references)
-
 ## 📊 Project Overview
 
 This repository documents my hands-on experience during the Null Class

@@ -1,4 +1,4 @@
-SOC Analyst TInternship Project: Blue Team Automation & Threat Detection
+SOC Analyst Internship Project: Red Team Attack Surface and Blue Team Automation & Threat Detection overall  a Purple Teaming
 
 ## 📊 Project Overview
 

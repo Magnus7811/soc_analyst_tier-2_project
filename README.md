@@ -459,16 +459,12 @@ suspicious external URL.\
 author: Piyush Singh\
 date: 2025-08-09\
 references:\
--
-\[https://attack.mitre.org/techniques/T1053/005/\](https://attack.mitre.org/techniques/T1053/005/)\
--
-\[https://attack.mitre.org/techniques/T1547/001/\](https://attack.mitre.org/techniques/T1547/001/)\
--
-\[https://attack.mitre.org/techniques/T1078/\](https://attack.mitre.org/techniques/T1078/)\
--
-\[https://attack.mitre.org/techniques/T1003/\](https://attack.mitre.org/techniques/T1003/)\
--
-\[https://attack.mitre.org/techniques/T1041/\](https://attack.mitre.org/techniques/T1041/)\
+
+[https://attack.mitre.org/techniques/T1053/005/\](https://attack.mitre.org/techniques/T1053/005/)\
+[https://attack.mitre.org/techniques/T1547/001/\](https://attack.mitre.org/techniques/T1547/001/)\
+[https://attack.mitre.org/techniques/T1078/\](https://attack.mitre.org/techniques/T1078/)\
+[https://attack.mitre.org/techniques/T1003/\](https://attack.mitre.org/techniques/T1003/)\
+[https://attack.mitre.org/techniques/T1041/\](https://attack.mitre.org/techniques/T1041/)\
 logsource:\
 product: windows\
 service: security\

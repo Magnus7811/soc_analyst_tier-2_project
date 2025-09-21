@@ -3,7 +3,7 @@ SOC Analyst TInternship Project: Blue Team Automation & Threat Detection
 ## 📖 Table of Contents
 
 -   [[Project
-    > Overview]{.underline}](https://www.google.com/search?q=%23-project-overview)
+    > Overview]](https://www.google.com/search?q=%23-project-overview)
 
 -   [[Lab Environment
     > Setup]{.underline}](https://www.google.com/search?q=%23-lab-environment-setup)

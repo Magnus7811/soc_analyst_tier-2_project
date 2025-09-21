@@ -15,7 +15,7 @@ SOC Analyst TInternship Project: Blue Team Automation & Threat Detection
     > SIEM]{.underline}](https://www.google.com/search?q=%23-task-2-custom-correlation-rules-in-siem)
 
 -   [[Task 3: Multi-Stage APT
-    > Simulation]{.underline}](https://www.google.com/search?q=%23-task-3-multi-stage-apt-simulation)
+    > Simulation]](https://www.google.com/search?q=%23-task-3-multi-stage-apt-simulation)
 
 -   [[Tools and
     > Technologies]{.underline}](https://www.google.com/search?q=%23-tools-and-technologies)

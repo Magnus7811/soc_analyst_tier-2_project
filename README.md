@@ -6,7 +6,7 @@ SOC Analyst TInternship Project: Blue Team Automation & Threat Detection
     > Overview]](https://github.com/Magnus7811/soc_analyst_tier-2_project.git)
 
 -   [[Lab Environment
-    > Setup]{.underline}](https://www.google.com/search?q=%23-lab-environment-setup)
+    > Setup]](https://github.com/Magnus7811/soc_analyst_tier-2_project)
 
 -   [[Task 1: SOC Workflow
     > Automation]{.underline}](https://www.google.com/search?q=%23-task-1-soc-workflow-automation)
